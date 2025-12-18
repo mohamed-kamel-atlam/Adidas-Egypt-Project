@@ -1,0 +1,278 @@
+/* ======================================================== */
+
+/* 1- Home Section */
+
+/* ======================================================== */
+
+.home {
+    position: relative;
+    height: 100vh;
+}
+
+.red-circle {
+    position: absolute;
+    width: 40%;
+    height: 99.5vh;
+    border-radius: 50% 0 0 5%;
+    top: 0.5%;
+    right: 0;
+    background-color: #e50002;
+    z-index: -10;
+}
+
+.home .main-content {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.home .main-content .desc {
+    width: 40%;
+    color: #fefefe;
+}
+
+.home .main-content .desc h1 {
+    font-weight: 900;
+    font-size: 3rem;
+}
+
+.home .main-content .desc p {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.home .main-content .desc span {
+    font-weight: 400;
+    color: #999;
+    display: block;
+    width: 80%;
+    line-height: 2rem;
+}
+
+.home .main-content img {
+    position: absolute;
+    top: 8%;
+    right: 22%;
+    scale: 0.9;
+    transform: scaleX(-1) rotate(10deg);
+    animation: shoeSwing 2s infinite ease-in-out;
+}
+
+@keyframes shoeSwing {
+  0%   { transform: scaleX(-1) rotate(10deg); }
+  50%  { transform: scaleX(-1) rotate(20deg); }
+  100% { transform: scaleX(-1) rotate(10deg); }
+}
+
+/* ======================================================== */
+
+/* 2- Man Section */
+
+/* ======================================================== */
+
+.men .cards .card img {
+    margin: 3% 0;
+}
+
+/* ======================================================== */
+
+/* 3- Sports Section */
+
+/* ======================================================== */
+
+.sports .cards .card img {
+    transform: scaleX(-1);
+}
+
+.sports .cards .card img:hover {
+    transform: scaleX(-1) rotate(20deg);
+    transition: all 0.7s ease-in-out;
+}
+
+/* ======================================================== */
+
+/* 4- Footer */
+
+/* ======================================================== */
+
+footer {
+    color: #fefefe;
+    background: #7d2121;
+    margin-top: 10%;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    width: 90%;
+    margin: 1% auto 3%;
+    justify-content: space-between;
+}
+
+.item-footer {
+    width: 23%;
+}
+
+.item-footer h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-top: -8px;
+}
+
+.item-footer p {
+    color: #ddd;
+}
+
+.center {
+    text-align: center;
+}
+
+.item-footer h3 {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.item-footer ul {
+    list-style: none;
+}
+
+.item-footer ul li a {
+    text-decoration: none;
+    color: #ddd;
+    display: block;
+}
+
+.item-footer div {
+    margin: 2% 0;
+}
+
+.item-footer div span {
+    color: #ddd;
+    margin-left: 1%;
+}
+
+.social-media {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    height: 64%;
+    margin-left: 1%;
+}
+
+footer hr {
+    width: 96%;
+    margin: 0 auto;
+}
+
+.copy-right {
+    text-align: center;
+    margin-top: 2%;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+/* ======================================================== */
+
+/* 5- Responsive Design (Media Queries) */
+
+/* ======================================================== */
+
+/* ====== Laptop (≤ 1200px) ====== */
+@media (max-width: 1200px) {
+  .home .main-content img {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+/* ====== Tablet (≤ 992px) ====== */
+@media (max-width: 992px) {
+  .home .main-content .desc {
+    width: 70%;
+  }
+
+  .home .main-content img {
+    max-width: 300px;
+  }
+
+  .item-footer {
+    width: 45%;
+  }
+}
+
+/* ====== Mobile Medium (≤ 768px) ====== */
+@media (max-width: 768px) {
+  .home .main-content {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 100px 20px 40px;
+  }
+
+  .home .main-content .desc {
+    width: 90%;
+  }
+
+  .home .main-content img {
+    position: relative;
+    margin: 20px auto 0;
+    transform: scale(0.9);
+    animation: none;
+    max-width: 280px;
+  }
+
+  .footer-content {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .item-footer {
+    width: 45%;
+  }
+}
+
+/* ====== Mobile Small (≤ 576px) ====== */
+@media (max-width: 576px) {
+  .home {
+    text-align: center;
+    height: auto;
+    padding: 80px 20px 40px;
+  }
+
+  .home .main-content {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+  }
+
+  .home .main-content .desc {
+    width: 100%;
+  }
+
+  .home .main-content img {
+    position: relative;
+    margin: 20px auto 0;
+    transform: scale(0.9);
+    animation: none;
+    max-width: 250px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .item-footer {
+    width: 100%;
+  }
+
+  .item-footer ul.social-media {
+    margin: 0 33%;
+  }
+}
