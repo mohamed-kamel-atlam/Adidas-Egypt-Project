@@ -3,58 +3,91 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ADIDAS || Cart Details</title>
 
-    <!-- Icon For Page -->
-    <link rel="icon" href="../assets/images/icons/adidas.png">
+    <title>Shopping Cart | ADIDAS Egypt</title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Review your Adidas shopping cart, check product details, quantities, and prices before proceeding to checkout." />
+    <meta name="author" content="ADIDAS Egypt" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <link rel="canonical" href="https://www.adidas-egypt.com/cart" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Shopping Cart | ADIDAS Egypt" />
+    <meta
+      property="og:description"
+      content="Review your shopping cart and complete your purchase on ADIDAS Egypt." />
+    <meta
+      property="og:image"
+      content="https://www.adidas-egypt.com/assets/images/og-cart.jpg" />
+    <meta property="og:url" content="https://www.adidas-egypt.com/cart" />
+    <meta property="og:site_name" content="ADIDAS Egypt" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Shopping Cart | ADIDAS Egypt" />
+    <meta
+      name="twitter:description"
+      content="Review your items and proceed to checkout on ADIDAS Egypt." />
+    <meta
+      name="twitter:image"
+      content="https://www.adidas-egypt.com/assets/images/og-cart.jpg" />
+
+    <!-- UI / App -->
+    <meta name="theme-color" content="#2e2e2e" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Icon -->
+    <link rel="icon" href="../assets/images/icons/adidas.png" />
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
 
-    <!-- My Style -->
-    <link rel="stylesheet" href="../assets/styles/main.css">
-    <link rel="stylesheet" href="../assets/styles/layout/header.css">
-    <link rel="stylesheet" href="../assets/styles/pages/cart_details.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="../assets/styles/main.css" />
+    <link rel="stylesheet" href="../assets/styles/layout/header.css" />
+    <link rel="stylesheet" href="../assets/styles/pages/cart_details.css" />
   </head>
+
   <body>
     <!-- Header -->
-    <header id="header">
-        
-    </header>
+    <header id="header"></header>
 
     <!-- Main Content -->
     <div class="main-cart" id="main-cart">
-        <!-- Products -->
-        <div class="products-cart">
-            
+      <!-- Products -->
+      <div class="products-cart"></div>
+
+      <!-- Invoice -->
+      <div class="invoice-cart">
+        <div class="invoice-head">
+          <h2>ADIDAS</h2>
+          <img src="../assets/images/icons/adidas.png" alt="logo" />
         </div>
 
-        <!-- Invoice -->
-        <div class="invoice-cart">
-            <div class="invoice-head">
-                <h2>ADIDAS</h2>
-                <img src="../assets/images/icons/adidas.png" alt="logo">
-            </div>
+        <table border="1" width="90%">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Quantity</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
 
-            <table border="1" width="90%">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Quantity</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody id="table-body">
-                    
-                </tbody>
-            </table>
-
-            <h3 class="total-price"></h3>
-        </div>
+        <h3 class="total-price"></h3>
+      </div>
     </div>
 
     <div class="no-product" id="no-product">
-        <h2>Not Exist Any Product</h2>
+      <h2>Not Exist Any Product</h2>
     </div>
 
     <!-- Scripts -->

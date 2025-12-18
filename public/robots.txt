@@ -1,0 +1,24 @@
+robots.txt=====> 
+
+# Robots.txt for ADIDAS Shopping
+# This file helps search engines crawl your website efficiently
+
+# Allow all search engines
+User-agent: *
+Allow: /
+Allow: /public/
+Allow: /assets/
+
+# Disallow private areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+
+# Specify sitemap location
+Sitemap: https://www.yourdomain.com/sitemap.xml
+
+# Crawl delay (in seconds) - adjust if needed
+Crawl-delay: 1
+
+# Request rate
+Request-rate: 1/5s
