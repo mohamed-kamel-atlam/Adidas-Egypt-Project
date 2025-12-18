@@ -1,0 +1,138 @@
+body {
+    background-color: #FAF7F3;
+}
+
+header {
+    background-color: #FAF7F3;
+}
+
+header nav h2 {
+    color: #D9A299;
+}
+
+header nav ul li a {
+    color: #ddc19a;
+}
+
+header nav ul li a.after1::after ,
+header nav ul li a.after2::after {
+    background-color: #D9A299;
+}
+
+.cart-count {
+  background-color: #ae7d75;
+}
+
+/* ===== products ===== */
+
+.products {
+    margin-top: 10%;
+}
+
+.cards {
+    flex-wrap: wrap;
+}
+
+.cards .card {
+    width: 23%;
+    border: 2px solid #DCC5B2;
+    margin-bottom: 2%;
+    color: #ddc19a;
+}
+
+.cards .card:hover {
+    animation: customAni 2s ease-in-out;
+}
+
+@keyframes customAni {
+  0%,
+  100% {
+	transform: rotate(0deg);
+	transform-origin: 50% 0;
+  }
+
+  10% {
+	transform: rotate(2deg);
+  }
+
+  20%,
+  40%,
+  60% {
+	transform: rotate(-4deg);
+  }
+
+  30%,
+  50%,
+  70% {
+	transform: rotate(4deg);
+  }
+
+  80% {
+	transform: rotate(-2deg);
+  }
+
+  90% {
+	transform: rotate(2deg);
+  }
+}
+
+.cards .card img {
+    width: 60%;
+    height: 15vh;
+}
+
+.cards .card .custom-btn {
+    margin-bottom: 3%;
+}
+
+.btn-3 {
+    background: #DCC5B2;
+    background: linear-gradient(0deg, #DCC5B2 0%, #D9A299 100%);
+}
+
+.btn-3:before,
+.btn-3:after {
+    background: #DCC5B2;
+}
+
+.btn-3 span:hover{
+   color: #DCC5B2;
+}
+
+.btn-3 span:before,
+.btn-3 span:after {
+    background: #DCC5B2;
+}
+
+/* ===== Scroll ===== */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #D9A299; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ddc19a; 
+}
+
+/* ============= Media Query ============= */
+
+@media (max-width: 768px) {
+  .cards {
+    position: relative;
+    top: 50px;
+  }
+
+  .custom-btn {
+    width: 80px;
+  }
+
+  .btn-3 {
+    width: 80px;
+  }
+
+  .cards .card {
+    width: 45%;
+  }
+}

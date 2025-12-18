@@ -1,0 +1,198 @@
+/* ======================================================== */
+
+/* 1- Header */
+
+/* ======================================================== */
+
+header {
+    background-color: #2e2e2e;
+    box-shadow: 2px 5px 10px rgba(0,0,0,.3);
+}
+
+header nav ul li a.after2::after {
+    background-color: #e50002;
+}
+
+/* ======================================================== */
+
+/* 2- Main Content */
+
+/* ======================================================== */
+
+.main-cart {
+    position: relative;
+    top: 120px;
+    width: 73%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-item-cart {
+    border: 3px solid #e50002;
+    display: flex;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 80%;
+}
+
+.product-item-cart img {
+    width: 25%;
+    margin-right: 25px;
+    border: 2px solid #696969;
+    padding: 10px;
+}
+
+.product-item-details {
+    color: #888;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.product-item-details h2 {
+    color: #e9e9e9;
+    margin-bottom: 10px;
+}
+
+.product-item-details h4 {
+    margin-top: 10px;
+    color: #aaa;
+}
+
+.product-item-details button {
+    float: right;
+    padding: 8px;
+    background-color: #e50002;
+    color: #e9e9e9;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.product-item-details button:hover {
+    background-color: #9b0003;
+    scale: 1.05;
+}
+
+/* ======================================================== */
+
+/* 3- Invoice Cart */
+
+/* ======================================================== */
+
+.invoice-cart {
+    border: 3px solid #e50002;
+    padding: 0 10px;
+    width: 35%;
+    height: fit-content;
+}
+
+.invoice-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.invoice-head h2 {
+    color: #e50002;
+}
+
+.invoice-head img {
+    width: 10%;
+}
+
+table {
+    margin: 20px auto;
+    border: 2px solid #000;
+}
+
+th , td {
+    text-align: center;
+    padding: 5px 0;
+    color: #e9e9e9;
+}
+
+.total-price {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: clamp(1rem , 1.5vw , 1.8rem);
+}
+
+.no-product {
+    background-color: #e50002;
+    opacity: 0.8;
+    color: #e9e9e9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    padding: 40px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    transform: translate(-50% , -50%);
+    display: none;
+}
+
+/* ============= Media Query ============= */
+
+/* Tablets (<= 992px) */
+@media (max-width: 992px) {
+  .main-cart {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .products-cart {
+    width: 100%;
+  }
+
+  .invoice-cart {
+    width: 80%;
+    margin-bottom: 30px;
+  }
+
+  .product-item-cart {
+    width: 95%;
+  }
+
+  .product-item-cart img {
+    width: 30%;
+  }
+}
+
+/* Mobiles (<= 600px) */
+@media (max-width: 600px) {
+  .main-cart {
+    top: 100px;
+  }
+
+  .product-item-cart {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-item-cart img {
+    width: 60%;
+    margin: 0 0 15px 0;
+  }
+
+  .product-item-details button {
+    float: none;
+    margin-top: 10px;
+  }
+
+  .invoice-cart {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+
+  table {
+    font-size: 0.8rem;
+  }
+}
